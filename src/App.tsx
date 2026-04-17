@@ -18,7 +18,7 @@ useEffect(() => {
   fetch(`${import.meta.env.VITE_API_URL}/payments/create-payment-intent`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ amount: 5000 }), // $50.00 MXN
+    body: JSON.stringify({ amount: 1000 })
   })
     .then((res) => res.json())
     .then((data) => setClientSecret(data.clientSecret));
