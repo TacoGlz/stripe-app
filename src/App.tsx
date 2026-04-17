@@ -8,7 +8,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 import { useEffect } from 'react';
 
-const stripePromise = loadStripe('pk_test_51T73YhRt6xtHG2ijSRmWAxWkMg7zFU3zLnCGAUDxGruT5pMKKCVid6F2EUoHd8BlGhE7HDm0040SGhXlEhoWhbZw00ZsPKpNcI');
+const stripePromise = loadStripe('pk_live_51T73YhRt6xtHG2ijEfnBhUIH8a7DM538YGoDbvP5mv3dmtH9CQT6yTab1WYAnm50ZidqKxyqUMzhyLTCaJMUILsf00AQbTuySF');
 
 function App() {
   const [count, setCount] = useState(0)
