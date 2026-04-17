@@ -17,7 +17,7 @@ export const CheckoutForm = () => {
       elements,
       confirmParams: {
         // Aunque estés en local, Stripe necesita saber a dónde regresar al usuario
-        return_url: "http://localhost:5173/completion",
+        return_url: "https://stripe-api-gewm.onrender.com",
       },
     });
 
