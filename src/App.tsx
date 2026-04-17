@@ -15,7 +15,7 @@ function App() {
   const [clientSecret, setClientSecret] = useState<string | undefined>(undefined);
 
 useEffect(() => {
-  fetch("http://localhost:3000/payments/create-payment-intent", {
+  fetch(`${import.meta.env.VITE_API_URL}/payments/create-intent`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ amount: 5000 }), // $50.00 MXN
